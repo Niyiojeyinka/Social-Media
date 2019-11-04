@@ -9,8 +9,4 @@
 <li>User Chat</li>
 <li>Followership</li>
 <li>Timeline</li>
-
-
-
-
 </ul>

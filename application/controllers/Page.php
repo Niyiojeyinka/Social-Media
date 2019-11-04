@@ -18,7 +18,8 @@ class Page extends CI_Controller {
 		$this->load->view('common/headermeta_view');
 		$this->load->view('public/common/header_view');
 		$this->load->view('public/common/home_view');
-		$this->load->view('public/common/footer_view');
+	    $this->load->view('common/footer_view');
+
 	}
 
 
