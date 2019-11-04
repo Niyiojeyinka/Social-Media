@@ -8,6 +8,14 @@ class Page extends CI_Controller {
     $this->load->model(array('page_model'));
 
 
+   $this->siteName = "Social Network";//$this->back_model->get_system_variable("site_name");
+      $this->author = "Social Network";//$this->back_model->get_system_variable("author");
+      $this->keywords = "Social Network";//$this->back_model->get_system_variable("keywords");
+      $this->description="Social Network";//$this->back_model->get_system_variable("description");
+      $this->tagLine= "Social Network";//$this->back_model->get_system_variable("tagline");
+      $this->noindex = '<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">';
+
+
   }/**
 	 *Package : Page
 	 *@Descriptions: A class to handle the App Pages
