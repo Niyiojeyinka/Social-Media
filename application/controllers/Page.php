@@ -6,6 +6,9 @@ class Page extends CI_Controller {
   {
   	parent::__construct();
     $this->load->model(array('page_model'));
+    $this->load->helper(array('url','form'));
+    $this->load->library(array('form_validation','user_agent'));
+
 
 
    $this->siteName = "Social Network";//$this->back_model->get_system_variable("site_name");
