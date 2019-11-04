@@ -5,7 +5,8 @@ class Page extends CI_Controller {
   public function __construct()
   {
   	parent::__construct();
-    $this->load->model(array('page_model'))
+    $this->load->model(array('page_model'));
+
 
   }/**
 	 *Package : Page
