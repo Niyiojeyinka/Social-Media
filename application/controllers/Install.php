@@ -69,7 +69,6 @@ class Install extends CI_Controller {
         receiver_id int(10),
         sender_id varchar(128) NOT NULL,
         action_type enum('like','share','comment','message') NOT NULL,
-        `time` varchar(128) NOT NULL,
         notification_status enum('unread','read') NOT NULL,
         privacy enum('public','private'),
         `time` varchar(128) NOT NULL,
@@ -82,7 +81,7 @@ class Install extends CI_Controller {
          receiver_id int(10) NOT NULL,
         sender_id int(10) NOT NULL,
         status enum('active','inactive','blocked'),
-        blocker_id 
+        blocker_id varchar(128),
         `time` varchar(128) NOT NULL,
         PRIMARY KEY (id)
 );",
@@ -98,7 +97,20 @@ class Install extends CI_Controller {
         PRIMARY KEY (id)
 );"
 
-    );		
+    );	
+
+
+$count = 0;
+ foreach($queries as $value)
+ {
+    $count++;
+  if ($this->db->query($value))
+  {
+
+  echo "Query  ".$count." executed successfully<br>";
+
+  }
+  }
 	}
 
 
