@@ -10,7 +10,7 @@ class Page extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('common/headmeta_view');
+		$this->load->view('common/headermeta_view');
 		$this->load->view('public/common/header_view');
 		$this->load->view('public/common/home_view');
 		$this->load->view('public/common/footer_view');
