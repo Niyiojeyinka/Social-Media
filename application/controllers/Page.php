@@ -24,6 +24,15 @@ class Page extends CI_Controller {
 
 	public function index()
 	{
+
+      $data['web_favicon_slug'] = "assets/images/favicon.ico";
+      $data['title'] = $this->siteName." | Welcome";
+      $data['author'] =  $this->author;
+      $data['keywords'] =  $this->keywords;
+      $data['description'] =  $this->description;    
+      $data["noindex"] =  $this->noindex;
+
+
 		$this->load->view('common/headermeta_view');
 		$this->load->view('public/common/header_view');
 		$this->load->view('public/common/home_view');
