@@ -34,11 +34,12 @@
 	" />
 
 	<?= isset($noindex)? $noindex:""?>
-		<link rel="stylesheet"  href="<?php echo base_url('assets/css/w3.css'); ?>">
 		<link rel="stylesheet" href="<?php echo base_url('assets/css/w3-theme-pink.css'); ?>">
 		<link rel="stylesheet"  href="<?php echo base_url('assets/css/w3mobile.css'); ?>">
 		<link rel="stylesheet"  href="<?php echo base_url('assets/css/font-awesome-4.7.0/css/font-awesome.min.css'); ?>">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet"  href="<?php echo base_url('assets/css/w3.css'); ?>">
+
 		</script>
 
 		
@@ -53,6 +54,15 @@
 
 		display:none;
 	}
+	#data-frame{
+	height: 100vh;
+
+}
+
+#top {
+
+	background-image: url("<?=base_url('assets/images/mobile_bg.png') ?>");
+}
 }
 @media screen and (min-width:600px)
 {
@@ -62,11 +72,17 @@ display:none;
 }
 body {
 	background-color: #ebebeb;
-	height: 100vh;
-	padding: 5% 20%; 
+	//height: 100vh;
+	padding: 5% 20%;
+
+}
+#top {
+
+	background-image: url("<?=base_url('assets/images/desktop_bg.png') ?>");
 }
 
 }
     </style>
 
 </head>
+<body>
