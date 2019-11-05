@@ -15,14 +15,18 @@
 	<p class="w3-xlarge"><strong>Connect With Friends and Family</strong></p>
 	<p class=" w3-opacity">Get in touch and meet new people using social platform that truly depict your value</p>
 	
+<i class="fa fa-circle w3-text-pink w3-tiny"></i>
+<i class="fa fa-circle w3-text-light-pink w3-tiny"></i>
+<i class="fa fa-circle w3-text-light-pink w3-tiny"></i>
+
 
 </div>
+
 <div class="w3-margin-top w3-padding-top">
 
-<a href="register" class="w3-button w3-pink w3-padding w3-round w3-margin w3-border w3-border-pink w3-hover-white w3-hover-text-pink" style="min-width: 60%;">Register</a>
-<a href="register" style="min-width: 60%;" class="w3-button w3-pink w3-padding w3-round w3-margin w3-border w3-border-pink w3-hover-white w3-hover-text-pink">Sign In</a>
+<a href="<?=site_url('register') ?>" class="w3-button w3-pink w3-padding w3-round w3-margin w3-border w3-border-pink w3-hover-white w3-hover-text-pink" style="min-width: 60%;">Register</a>
+<a href="<?=site_url('login') ?>" style="min-width: 60%;" class="w3-button w3-pink w3-padding w3-round w3-margin w3-border w3-border-pink w3-hover-white w3-hover-text-pink">Sign In</a>
 
 <br>
-<i class="fa fa-circle w3-text-pink"></i>
 </div>
 </div>

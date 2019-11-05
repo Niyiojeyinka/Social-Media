@@ -44,7 +44,11 @@
 
 		
 
-    <style type="text/css">a {
+    <style type="text/css">
+   .w3-text-light-pink {
+   	color:rgb(250,212,226);
+   }
+    a {
 
     		text-decoration:none;
     	}
@@ -55,7 +59,7 @@
 		display:none;
 	}
 	#data-frame{
-	height: 100vh;
+	//height: 100vh;
 
 }
 
@@ -72,7 +76,6 @@ display:none;
 }
 body {
 	background-color: #ebebeb;
-	//height: 100vh;
 	padding: 5% 20%;
 
 }
