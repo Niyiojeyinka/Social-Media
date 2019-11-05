@@ -60,6 +60,11 @@
 
 display:none;
 }
+body {
+	background-color: #ebebeb;
+	height: 100vh;
+	padding: 5% 20%; 
+}
 
 }
     </style>
