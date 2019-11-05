@@ -11,7 +11,7 @@ class Page extends CI_Controller {
 
 
 
-   $this->siteName = "Social Network";//$this->back_model->get_system_variable("site_name");
+      $this->siteName = "Social Network";//$this->back_model->get_system_variable("site_name");
       $this->author = "Social Network";//$this->back_model->get_system_variable("author");
       $this->keywords = "Social Network";//$this->back_model->get_system_variable("keywords");
       $this->description="Social Network";//$this->back_model->get_system_variable("description");
@@ -36,9 +36,9 @@ class Page extends CI_Controller {
       $data["noindex"] =  $this->noindex;
 
 
-		$this->load->view('common/headermeta_view');
+		$this->load->view('common/headermeta_view',$data);
 		$this->load->view('public/common/header_view');
-		$this->load->view('public/common/home_view');
+		$this->load->view('public/home_view');
 	    $this->load->view('common/footer_view');
 
 	}
