@@ -34,9 +34,8 @@ class Page extends CI_Controller {
       $data['keywords'] =  $this->keywords;
       $data['description'] =  $this->description;    
       $data["noindex"] =  $this->noindex;
-      
+
 		$this->load->view('common/headermeta_view',$data);
-		$this->load->view('public/common/header_view');
 		$this->load->view('public/home_view');
 	    $this->load->view('common/footer_view');
 
